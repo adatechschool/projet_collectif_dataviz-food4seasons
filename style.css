@@ -13,6 +13,12 @@
     
 }
 
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+     size: 20px;
+     text-align: center;
+}
+
 .saisonnalite {
    display: flex;
    flex-direction: row;
@@ -42,10 +48,27 @@
     overflow: hidden;
     box-shadow: 5px 5px 10px black;
     margin-right: 10px;
-    
-    
-    
+     
 }
 
+#entreprise-cueilletes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+}
+
+.entreprise {
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.nom_entreprise {
+    text-transform: uppercase;
+    font-size: 20px;
+}
 
