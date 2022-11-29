@@ -230,19 +230,9 @@ h1{
     transform: translateX(-1600px);
 }
 
+/*--------section 3*/
 
-/*-----Sections------*/
-
-.btn {
-    margin-right: 20px;
-    padding: 0;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-
-
-#container  /*section 3*/
+#container  
 {
     
     box-sizing: border-box;
