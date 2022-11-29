@@ -1,7 +1,7 @@
 function ouvrirPage(){
     let a = document.getElementById("search").value;
     if(a === "fruits"){
-        window.open("https://www.greenpeace.fr/guetteur/calendrier/"); //data.json
+        window.open("https://mesfruitsetlegumesdesaison.fr/"); //data.json
     }
 }       
 
