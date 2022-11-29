@@ -72,7 +72,7 @@ function ouvrirPage(){
     let a = document.getElementById("search").value;
 
     if(a === "fruits"){
-        window.open("https://mesfruitsetlegumesdesaison.fr/months/10");
+        window.open("https://www.greenpeace.fr/guetteur/calendrier/");
     }
 }
 
