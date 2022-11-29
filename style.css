@@ -72,3 +72,20 @@ h1{
     font-size: 20px;
 }
 
+#search {
+    border-radius: 30px;
+    border: 2px solid black;
+    
+}
+
+body {
+    background-color: yellow;
+}
+
+#button{
+    background-color: tomato;
+    border: 0px solid black;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
