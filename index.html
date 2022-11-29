@@ -1,12 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food4seasons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Food4Seasons</title>
 </head>
+
 <body>
-    
+
+    <!--Header = Menu ou barre de navigation-->
+
+    <header>
+        <nav>
+            <div class="titre">
+                <h2> Food4Seasons</h2>
+            </div>
+            <ul>
+                <li><a id="#Accueil">Accueil</a></li>
+                <li><a href="#Légumes">Légumes</a></li>
+                <li><a href="#Fruits">Fruits</a></li>
+                <li><a href="#Cueillettes">Cueillettes</a></li>
+                <!--a href="url mail">Contact</a-->
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <input type="search" id="search" value="" onchange="ouvrirPage()">
+    <input type="button" id="button" onclick="ouvrirPage()" value="chercher">
+
+
+    <!--BARRE DE RECHERCHE????-->
+
+    <!------------Section 1 = Accueil + photos défilements-->
+
+    <section id="Accueil">
+        <div class="accueil">
+            <h3>Accueil</h3>
+        </div>
+    </section>
+
+    <!--Défilement des photos-->
+    <!-- 
+<div class="caroussel-wrapper">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <span id="item-3"></span>
+</div>
+
+<div class="caroussel-item item-1">
+    <a href="#item-3" class="arrow-prev arrow"></a>
+    <a href="#item-2" class="arrow-next arrow"></a>
+</div>
+<div class="caroussel-item item-2">
+    <a href="#item-1" class="arrow-prev arrow"></a>
+    <a href="#item-3" class="arrow-next arrow"></a>
+</div>
+<div class="caroussel-item item-3">
+    <a href="#item-2" class="arrow-prev arrow"></a>
+    <a href="#item-1" class="arrow-next arrow"></a>
+</div>
+         -->
+
+    <!--div class="photos">
+        <img src="photos_slide/enfant_brouette.jpg">
+        <img src="photos_slide/recolte.jpg">
+        <img src="photos_slide/bread.jpg">
+    </div-->
+
+
+    <!-- GOOD-->
+    <div class="slider">
+
+        <div class="slider-viewport">
+            <div id="img1">
+                <div id="img2">
+                    <div id="img3">
+                        <div class="slider-content">
+                            <img src="photos_slide/enfant_brouette.jpg">
+                            <img src="photos_slide/recolte.jpg">
+                            <img src="photos_slide/bread.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-nav">
+            <a href="#img1"></a>
+            <a href="#img2"></a>
+            <a href="#img3"></a>
+        </div>
+    </div>
+    <!---------------GOOD-->
+
+    <!--section class="sectionOne">
+    <section class="section">
+        <div class="slider">
+
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+            </div>
+
+            <div class="st first">
+                <img src="photos_slide/enfant_brouette.jpg" 
+                        alt="un enfant avec une brouette devant un champs" 
+                        class="slide">
+            </div>
+
+            <div class="st second">>
+                <img src="photos_slide/recolte.jpg" 
+                        alt="une main piochant dans une corbeille remplie de fruits" 
+                        class="slide">
+            </div>
+                
+            <div class="st third">
+                <img src="photos_slide/bread.jpg" 
+                        alt="des légumes disposés sur une tartine de pain" 
+                        class="slide">
+            </div>
+
+            <div class="nav-auto">
+                <div class="a-b1"></div>
+                <div class="a-b2"></div>
+                <div class="a-b3"></div>
+            </div>  
+
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+            </div>
+
+        </div>
+    </section>
+</section-->
+
+
+
+    <!--div class="slider">
+    <div class="slides">
+        <img src="photos_slide/enfant_brouette.jpg" class="slide">
+        <img src="photos_slide/recolte.jpg" class="slide">
+        <img src="photos_slide/bread.jpg" class="slide">
+    </div>
+</div-->
+
+    <!-------------Section 2 = Légumes et fruits-->
+
+    <section id="Légumes">
+        <div class="légumes">
+            <h3>Légumes</h3>
+        </div>
+    </section>
+
+    <section id="Fruits">
+        <div class="fruits">
+            <h3>Fruits</h3>
+        </div>
+    </section>
+
+    <!--Section 3 = Cueillettes en IdF-->
+
+    <section id="Cueillettes">
+        <div class="cueillettes">
+            <h3>Cueillettes en Ile-de-France</h3>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!--section id="recommandations">
+        <div class="container">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Recommandations</h2>
+            </div>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3>"John t'es le meilleur! Merci pour tout..."</h3>
+                        <h4>Larry Page, Google Co-Founder</h4>
+                    </div>
+                    <div class="item">
+                        <h3>"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h3>
+                        <h4>Jack Dorsey, Twitter Founder and CEO</h4>
+                    </div>
+                    <div class="item">
+                        <h3>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h3>
+                        <h4>Mark Zuckerberg, Facebook Founder and CEO</h4>
+                    </div>
+                </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                
+            </div>
+            
+        </div>
+    </section-->
+
+    <div class="btn">
+        <a href="#">Revenir vers le haut</a>
+    </div>
+
 </body>
+
 </html>
