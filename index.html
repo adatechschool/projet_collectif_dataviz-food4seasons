@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Food4Seasons</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     
 </head>
 
@@ -28,7 +29,7 @@
                 <li><a href="#Légumes">Légumes</a></li>
                 <li><a href="#Fruits">Fruits</a></li>
                 <li><a href="#Cueillettes">Cueillettes</a></li>
-                <!--a href="url mail">Contact</a-->
+                
             </ul>
             </div>
         </nav>
@@ -38,7 +39,7 @@
     <input type="button" id="button" onclick="ouvrirPage()" value="chercher">
 
 
-    <!--BARRE DE RECHERCHE????-->
+   
 
     <!------------Section 1 = Accueil + photos défilements-->
 
@@ -49,35 +50,9 @@
     </section>
 
     <!--Défilement des photos-->
-    <!-- 
-<div class="caroussel-wrapper">
-    <span id="item-1"></span>
-    <span id="item-2"></span>
-    <span id="item-3"></span>
-</div>
+   
 
-<div class="caroussel-item item-1">
-    <a href="#item-3" class="arrow-prev arrow"></a>
-    <a href="#item-2" class="arrow-next arrow"></a>
-</div>
-<div class="caroussel-item item-2">
-    <a href="#item-1" class="arrow-prev arrow"></a>
-    <a href="#item-3" class="arrow-next arrow"></a>
-</div>
-<div class="caroussel-item item-3">
-    <a href="#item-2" class="arrow-prev arrow"></a>
-    <a href="#item-1" class="arrow-next arrow"></a>
-</div>
-         -->
-
-    <!--div class="photos">
-        <img src="photos_slide/enfant_brouette.jpg">
-        <img src="photos_slide/recolte.jpg">
-        <img src="photos_slide/bread.jpg">
-    </div-->
-
-
-    <!-- GOOD-->
+    
     <div class="slider">
 
         <div class="slider-viewport">
@@ -100,85 +75,8 @@
             <a href="#img3"></a>
         </div>
     </div>
-    <!---------------GOOD-->
-
-    <!--section class="sectionOne">
-    <section class="section">
-        <div class="slider">
-
-            <div class="slide">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-            </div>
-
-            <div class="st first">
-                <img src="photos_slide/enfant_brouette.jpg" 
-                        alt="un enfant avec une brouette devant un champs" 
-                        class="slide">
-            </div>
-
-            <div class="st second">>
-                <img src="photos_slide/recolte.jpg" 
-                        alt="une main piochant dans une corbeille remplie de fruits" 
-                        class="slide">
-            </div>
-                
-            <div class="st third">
-                <img src="photos_slide/bread.jpg" 
-                        alt="des légumes disposés sur une tartine de pain" 
-                        class="slide">
-            </div>
-
-            <div class="nav-auto">
-                <div class="a-b1"></div>
-                <div class="a-b2"></div>
-                <div class="a-b3"></div>
-            </div>  
-
-            <div class="nav-m">
-                <label for="radio1" class="m-btn"></label>
-                <label for="radio2" class="m-btn"></label>
-                <label for="radio3" class="m-btn"></label>
-            </div>
-
-        </div>
-    </section>
-</section-->
-
-
-
-    <!--div class="slider">
-    <div class="slides">
-        <img src="photos_slide/enfant_brouette.jpg" class="slide">
-        <img src="photos_slide/recolte.jpg" class="slide">
-        <img src="photos_slide/bread.jpg" class="slide">
-    </div>
-</div-->
-
-    <!-------------Section 2 = Légumes et fruits-->
-
-    <section id="Légumes">
-        <div class="légumes">
-            <h3>Légumes</h3>
-        </div>
-    </section>
-
-    <section id="Fruits">
-        <div class="fruits">
-            <h3>Fruits</h3>
-        </div>
-    </section>
-
-    <!--Section 3 = Cueillettes en IdF-->
-
-    <section id="Cueillettes">
-        <div class="cueillettes">
-            <h3>Cueillettes en Ile-de-France</h3>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    
+    
 
    
     <div class="btn">
@@ -242,6 +140,174 @@
     <div id="fruits-et-legumes"></div>
     <div id="entreprise-cueillettes"></div>
     
+<!-- Section 3 -->
+
+    <section id="container">
+        <div id="main_">
+            <h2 id="titre">Les Cueillettes à la ferme en IDF</h2>
+        </div>
+        <div id="bloc_cueillettes">
+            <!--grande boite ou se trouve les 10 divs-->
+            <div class="small_box">
+                <!--boite 1 ou se trouvent les 5 premières div-->
+                <div id="info_API_1" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_1">
+                        <figcaption class="communes">
+                            <p class="ville">Cergy 95</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_1_nom"></span><br>
+                        <span class="data_1_adresse"></span><br>
+                        <span class="data_1_cp"></span><br>
+                        <span class="data_1_tel"></span>
+                        <span class="data_1_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_2" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_2">
+                        <figcaption class="communes">
+                            <p class="ville">Torfou 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_2_nom"></span><br>
+                        <span class="data_2_adresse"></span><br>
+                        <span class="data_2_cp"></span><br>
+                        <span class="data_2_tel"></span>
+                        <span class="data_2_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_3" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_3">
+                        <figcaption class="communes">
+                            <p class="ville">Servigny 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_3_nom"></span><br>
+                        <span class="data_3_adresse"></span><br>
+                        <span class="data_3_cp"></span><br>
+                        <span class="data_3_tel"></span>
+                        <span class="data_3_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_4" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_4">
+                        <figcaption class="communes">
+                            <p class="ville">Courbert 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_4_nom"></span><br>
+                        <span class="data_4_adresse"></span><br>
+                        <span class="data_4_cp"></span><br>
+                        <span class="data_4_tel"></span>
+                        <span class="data_4_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_5" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_5">
+                        <figcaption class="communes">
+                            <p class="ville">Compans 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_5_nom"></span><br>
+                        <span class="data_5_adresse"></span><br>
+                        <span class="data_5_cp"></span><br>
+                        <span class="data_5_tel"></span>
+                        <span class="data_5_web"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="small_box">
+                <div id="info_API_6" class="block">
+                    <!--boite 2 ou se trouvent les 5 dernières div-->
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_6">
+                        <figcaption class="communes">
+                            <p class="ville">Chanteloup 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_6_nom"></span><br>
+                        <span class="data_6_adresse"></span><br>
+                        <span class="data_6_cp"></span><br>
+                        <span class="data_6_tel"></span>
+                        <span class="data_6_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_7" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_7">
+                        <figcaption class="communes">
+                            <p class="ville">Voisenon 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_7_nom"></span><br>
+                        <span class="data_7_adresse"></span><br>
+                        <span class="data_7_cp"></span><br>
+                        <span class="data_7_tel"></span>
+                        <span class="data_7_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_8" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_8">
+                        <figcaption class="communes">
+                            <p class="ville">Croix verte 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_8_nom"></span><br>
+                        <span class="data_8_adresse"></span><br>
+                        <span class="data_8_cp"></span><br>
+                        <span class="data_8_tel"></span>
+                        <span class="data_8_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_9" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_9">
+                        <figcaption class="communes">
+                            <p class="ville">Viltain 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_9_nom"></span><br>
+                        <span class="data_9_adresse"></span><br>
+                        <span class="data_9_cp"></span><br>
+                        <span class="data_9_tel"></span>
+                        <span class="data_9_web"></span>
+                    </p>
+                </div>
+
+                <div id="info_API_10" class="block">
+                    <figure>
+                        <img src="icones/les-terres-agricoles.png" alt="image_10">
+                        <figcaption class="communes">
+                            <p class="ville">Rutel 77</p>
+                        </figcaption>
+                    </figure>
+                    <p class="text"><span class="data_10_nom"></span><br>
+                        <span class="data_10_adresse"></span><br>
+                        <span class="data_10_cp"></span><br>
+                        <span class="data_10_tel"></span>
+                        <span class="data_10_web"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 </body>
 
 </html>
