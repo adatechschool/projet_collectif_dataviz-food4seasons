@@ -9,15 +9,6 @@ body {
     box-sizing: border-box;
 }
 
-/*--------Header*---------/
-
-/*header {
-    background: #fff;
-    min-height: 100vh;
-    overflow-x: hidden;
-}*/
-/*Fond ou bande de la barre de navigation*/
-
 header nav {
     display: flex;
     flex-wrap: wrap;
@@ -25,12 +16,7 @@ header nav {
     align-items: center;
     text-align: center;
     margin-right: 20px;
-    /*position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    padding: 20px 40px;
-    box-shadow: 0 15px 15px rgba(0,0,0,0,0.4);*/
+   
 }
 
 /*placement des contenus: accueil, lég, fruits, cueillettes + titre*/
@@ -86,31 +72,81 @@ nav a:hover {
     color: #cc2200;
 }
 
-/*Effet de changement de couleur quand la souris passe sur les mots*/
-
-/*header nav ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background: #cc2200;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    transform-origin: right;
-}
-header nav ul li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}*/
 /*Effet : trait sous le mot quand souris va desssus*/
+.legume img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: space-between;
+    margin: 0,5%;
+    display: block;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+    margin-right: 10px;
+    
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+     size: 20px;
+     text-align: center;
+}
+
+.saisonnalite {
+   display: flex;
+   flex-direction: row;
+   width: 200px;
+   text-align: center;
+   margin-block-start: 10%;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-inline-end: 0px;
+   margin-block-start: 0px;
+   position: relative;
+   font-size: 65%;
+   padding-left: 0px;
+   padding-right: 0px;
+   color: rgba(0, 0, 0) ;
+
+}
+
+.fruit img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: space-between;
+    margin: 0,5%;
+    display: block;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+    margin-right: 10px;
+     
+}
+
+
+
+#fruits-et-legumes {
+    display: flex;
+    flex-direction: rox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-bottom: 30px;
+ 
+
+}
 
 #search {
     border-radius: 30px;
     border: 2px solid black;
 }
 
-#button {
+
+
+#button{
     background-color: tomato;
     border: 0px solid black;
     height: 30px;
@@ -120,81 +156,6 @@ header nav ul li a:hover::before {
 
 /*-----Défilement photos-------*/
 
-/* .caroussel-wrapper {
-    height: 400px;
-    position: relative;
-    width: 800px;
-    display: block;
-    margin: 50px auto;
-    border: 2px solid black;
-    box-shadow: 0 15px 15px rgba(0,0,0,0.4);
-    
-}
-.caroussel-item {
-   /* position: absolute;*/
-/* position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px 50px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-.arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 12px;
-}
-.arrow-prev {
-    left: 30px; */
-/* position: absolute; */
-/* position: relative;
-    top: 50%;
-    transform: translateY(-50%) rotate(135deg);
-}
-.arrow-next {
-    right: 30px;
-    /*position: absolute;*/
-/* position: relative;
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-}
-[id^= "item"] {
-    display: none;
-}
-.item-1 {
-    z-index: 2;
-    opacity: 1;
-    background: url('photos_slide/enfant_brouette.jpg');
-    background-size: cover;
-    width: 50% ;
-    height: 40px 80px;
-}
-.item-2 {
-    background: ('photos_slide/recolte.jpg');
-    background-size: cover;
-}
-.item-3 {
-    background: ('photos_slide/bread.jpg');
-    background-size: cover;
-}
-*:target ~ .item-1 {
-    opacity: 0;
-}
-#item-1:target ~ .item-1 {
-    opacity: 1;
-} */
-/* #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
-    opacity: 1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px 50px;
-}  */
-/* GOOD */
 .slider {
     width: 800px;
     margin: 30px auto;
@@ -268,179 +229,8 @@ header nav ul li a:hover::before {
     transform: translateX(-1600px);
 }
 
-/*----GOOD*/
-
-
-
-
-/*.sectionOne {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    justify-self:center;
-    align-items: center;
-    background: #b5c3b1;
-}
-
-.section {
-    margin: 0;
-    padding: 0;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    width: 800px;
-    height: 350px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.slide {
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-.slide input {
-    display: none;
-}
-
-.st {
-    width: 100%;
-    transition: 2s;
-}
-
-.st img {
-    width: 100%;
-    height: auto;
-}
-
-.nav-m {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-}
-
-.m-btn {
-    border: 2px solid #32083d;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;    
-}
-
-.m-btn:not(:last-child) {
-    margin-right: 30px;
-}
-
-.m-btn:hover {
-    background-color:#32083d;
-}
-
-#radio1:checked .first {
-    margin-left: 0;
-}
-
-#radio2:checked .first {
-    margin-left: -20%;
-}
-
-#radio3:checked .first {
-    margin-left: -40%;
-}
-
-.nav-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 460px;
-    display:flex;
-    justify-content: center;
-}
-
-.nav-auto div {
-    border: 2px solid #32083d;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-
-
-
-/*.slider {
-    font-size: 0;
-    width: 80%;
-    margin: 3rem auto 0 auto;
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0 15px 15px rgba(0,0,0,0.4);
-}
-
-.slides {
-    width: 1000%;
-    position: relative;
-    float: left;
-    animation: slide 15s infinite;
-}
-
-.slide {
-    width: 10%;
-    height: 450px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    display: flex;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-
-@keyframes slider {
-    0%{
-        left: 0%
-    }
-    10%{
-        left: -100%;
-    }
-    20%{
-        left:-200%
-    }
-    30%{
-        left: -300%;
-    }
-    40%{
-        left: -400%
-    }
-    50%{
-        left: -500%;
-    }
-    60%{
-        left: -600%
-    }
-    70%{
-        left: -700%;
-    }
-    80%{
-        left: -800%
-    }
-    90%{
-        left: -900%;
-    }
-    100%{
-        left: -1000%;
-    }
-}*/
 
 /*-----Sections------*/
-
-h3 {
-    margin-left: 80px;
-    color: #32083d;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
 
 .btn {
     margin-right: 20px;
