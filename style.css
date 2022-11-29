@@ -1,0 +1,79 @@
+body
+{
+    margin:0px;
+    padding:0px;
+   font-family: Poppin, sans-serif;
+   background-color: #B5C3B1; 
+
+}
+
+
+
+#container
+{
+    
+    box-sizing: border-box;
+}
+
+.small_box
+{
+    display:flex;
+    flex:wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+/* #small_box_2
+{
+    display:flex;
+    flex:wrap;
+    justify-content: space-around;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}*/
+
+
+.text /*paragraphe + span avec les données de l'API*/
+{
+    position:absolute; 
+    border : 2px solid none;
+    padding : 3px 3px 3px 3px;
+    margin-top:5px;
+    border-radius:5px; 
+    background-color: #d4c658;
+    margin-left: 50px;
+    width:250px;
+    color:white;
+    z-index:1;
+}
+
+#bloc_cueillettes figure img /*photo de icones de cueillettes*/
+{
+    width :255px;
+    height :200px;
+    cursor:pointer;
+    z-index:2;
+    
+}
+#bloc_cueillettes figcaption .ville /*le nom de la ville en opacité*/
+{
+    position:absolute;
+    background-color:black;
+    color: white;
+    padding : 10px 10px 10px 10px;
+    margin-left:5px;
+    width:220px;
+    opacity: 0.7;
+    z-index:3;
+}
+
+
+
+.block
+{
+    width:20%;
+}
+
+
+  
