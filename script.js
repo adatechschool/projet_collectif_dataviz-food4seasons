@@ -20,50 +20,50 @@ const affichageCP2 = document.querySelector(".data_2_cp");
 const affichageTel2 = document.querySelector(".data_2_tel");
 const affichageWebsite2 = document.querySelector(".data_2_web");
 
-const affichageNom3 = document.querySelector(".data_3_nom");// même chose index 2 
+const affichageNom3 = document.querySelector(".data_3_nom");// même chose index 3
 const affichageAdresse3 = document.querySelector(".data_3_adresse");
 const affichageCP3 = document.querySelector(".data_3_cp");
 const affichageTel3 = document.querySelector(".data_3_tel");
 const affichageWebsite3 = document.querySelector(".data_3_web");
 
 
-const affichageNom4 = document.querySelector(".data_4_nom");// même chose index 2 
+const affichageNom4 = document.querySelector(".data_4_nom");// même chose index 4
 const affichageAdresse4 = document.querySelector(".data_4_adresse");
 const affichageCP4 = document.querySelector(".data_4_cp");
 const affichageTel4 = document.querySelector(".data_4_tel");
 const affichageWebsite4 = document.querySelector(".data_4_web");
 
-const affichageNom5 = document.querySelector(".data_5_nom");// même chose index 2 
+const affichageNom5 = document.querySelector(".data_5_nom");// même chose index 5 
 const affichageAdresse5 = document.querySelector(".data_5_adresse");
 const affichageCP5 = document.querySelector(".data_5_cp");
 const affichageTel5 = document.querySelector(".data_5_tel");
 const affichageWebsite5 = document.querySelector(".data_5_web");
 
-const affichageNom6 = document.querySelector(".data_6_nom");// même chose index 2 
+const affichageNom6 = document.querySelector(".data_6_nom");// même chose index 6
 const affichageAdresse6 = document.querySelector(".data_6_adresse");
 const affichageCP6 = document.querySelector(".data_6_cp");
 const affichageTel6 = document.querySelector(".data_6_tel");
 const affichageWebsite6 = document.querySelector(".data_6_web");
 
-const affichageNom7 = document.querySelector(".data_7_nom");// même chose index 2 
+const affichageNom7 = document.querySelector(".data_7_nom");// même chose index 7 
 const affichageAdresse7 = document.querySelector(".data_7_adresse");
 const affichageCP7 = document.querySelector(".data_7_cp");
 const affichageTel7 = document.querySelector(".data_7_tel");
 const affichageWebsite7 = document.querySelector(".data_7_web");
 
-const affichageNom8 = document.querySelector(".data_8_nom");// même chose index 2 
+const affichageNom8 = document.querySelector(".data_8_nom");// même chose index 8
 const affichageAdresse8 = document.querySelector(".data_8_adresse");
 const affichageCP8 = document.querySelector(".data_8_cp");
 const affichageTel8 = document.querySelector(".data_8_tel");
 const affichageWebsite8 = document.querySelector(".data_8_web");
 
-const affichageNom9 = document.querySelector(".data_9_nom");// même chose index 2 
+const affichageNom9 = document.querySelector(".data_9_nom");// même chose index 9 
 const affichageAdresse9 = document.querySelector(".data_9_adresse");
 const affichageCP9 = document.querySelector(".data_9_cp");
 const affichageTel9 = document.querySelector(".data_9_tel");
 const affichageWebsite9 = document.querySelector(".data_9_web");
 
-const affichageNom10 = document.querySelector(".data_10_nom");// même chose index 2 
+const affichageNom10 = document.querySelector(".data_10_nom");// même chose index 10
 const affichageAdresse10 = document.querySelector(".data_10_adresse");
 const affichageCP10 = document.querySelector(".data_10_cp");
 const affichageTel10 = document.querySelector(".data_10_tel");
@@ -167,7 +167,7 @@ promise01
             const webPage7 = reponse2.records[6].fields.web;
 
             affichageNom7.innerHTML = namee7; //lien entre api stockées dans des variables et balises sous HTML données index 1 du tableau de l'API
-            affichageAdresse7.innerHTML = adr7; //index 1
+            affichageAdresse7.innerHTML = adr7; //index 7
             affichageCP7.innerHTML = postCode7;
             affichageWebsite7.innerHTML = webPage7;
 
@@ -180,7 +180,7 @@ promise01
             const webPage8 = reponse2.records[7].fields.web;
 
             affichageNom8.innerHTML = namee8; //lien entre api stockées dans des variables et balises sous HTML données index 1 du tableau de l'API
-            affichageAdresse8.innerHTML = adr8; //index 1
+            affichageAdresse8.innerHTML = adr8; //index 8
             affichageCP8.innerHTML = postCode8;
             affichageWebsite8.innerHTML = webPage8;
 
@@ -194,7 +194,7 @@ promise01
             const webPage9 = reponse2.records[8].fields.web;
 
             affichageNom9.innerHTML = namee9; //lien entre api stockées dans des variables et balises sous HTML données index 1 du tableau de l'API
-            affichageAdresse9.innerHTML = adr9; //index 1
+            affichageAdresse9.innerHTML = adr9; //index 9
             affichageCP9.innerHTML = postCode9;
             affichageWebsite9.innerHTML = webPage9;
 
@@ -207,7 +207,7 @@ promise01
             const webPage10 = reponse2.records[9].fields.web;
 
             affichageNom10.innerHTML = namee10; //lien entre api stockées dans des variables et balises sous HTML données index 1 du tableau de l'API
-            affichageAdresse10.innerHTML = adr10; //index 1
+            affichageAdresse10.innerHTML = adr10; //index 10
             affichageCP10.innerHTML = postCode10;
             affichageWebsite10.innerHTML = webPage10;
         });
