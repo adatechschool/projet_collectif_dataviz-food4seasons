@@ -3,9 +3,12 @@
 function ouvrirPage(){
     let a = document.getElementById("search").value;
 
-    if(a === "fruits"){
-        window.open("https://www.greenpeace.fr/guetteur/calendrier/");
-    }
+  /* code qui permet de descendre sur la page si jamais on tape un mot sur la barre de recherche*/
+
+        window.open("#"+a.charAt(0).toUpperCase()+a.substr(1), '_self');
+    
+       /* document.getElementById(a.charAt(0).toUpperCase()+a.substr(1)).setAttribute("class","legumes resultat");*/
+        
 }
 
 
@@ -28,19 +31,22 @@ fetch("data.json")
         let image = resultat.emoji;
         let CO2 = resultat.CO2;
         let type = resultat.type;
+        
 
         document.getElementById("fruits-et-legumes").innerHTML +=
-            "<div class='legumes'>" +
+            "<div class='legumes' id='"+nom + "'>" +
             "<h2 class='nom'>"+nom + "</h2>"+
             "<div class='saison'>"+saison + "</div>" +
-            "<div class='type'>"+type + "</div>"
+            "<div class='type'>"+type + "</div>" 
             "</div>"
+
+            
 
     }
   
 })
 
-
+       /*Section 2 = images + nom + fichier Json
 
 
 
