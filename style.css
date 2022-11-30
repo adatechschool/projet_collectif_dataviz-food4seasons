@@ -83,6 +83,7 @@ h3
     /*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);*/
     padding-left: 100px;
     width: 300px;
+    
 }
 
 #légumes
@@ -97,7 +98,7 @@ h3
     width: 200px;
     height: 150px;
     border-radius: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0,5%;
     display: block;
     border: 1px solid rgb(247, 245, 245);
@@ -105,14 +106,14 @@ h3
     overflow: hidden;
     box-shadow: 5px 5px 10px black;
     margin-right: 10px;
-    z-index: 1;
+    
     
 }
 
 h1{
     font-family: 'Poppins' Arial, Helvetica, sans-serif;
      size: 20px;
-     text-align: center;
+     text-align: left;
      color: #32083d;
      /*background: #edc58a;*/
      border-radius: 1rem;
@@ -128,7 +129,7 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     position: relative;
-    z-index: 2;
+    
     
 }
 
@@ -162,7 +163,6 @@ h3 {
     overflow: hidden;
     box-shadow: 5px 5px 10px black;
     margin-right: 10px;
-    z-index: 1;
      
 }
 
