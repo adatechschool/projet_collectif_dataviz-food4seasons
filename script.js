@@ -108,8 +108,6 @@ const affichageWebsite10 = document.querySelector(".data_10_web");
 
 
 
-
-
 const promise01 = fetch("https://data.iledefrance.fr/api/records/1.0/search/?dataset=cueillettes-a-la-ferme-en-ile-de-france&q=")
 
 promise01
@@ -249,7 +247,10 @@ promise01
             affichageWebsite10.innerHTML = webPage10;
         });
 
+
     })
     .catch((err) => console.log(err))
 
 
+
+   

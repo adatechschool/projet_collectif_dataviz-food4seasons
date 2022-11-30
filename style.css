@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: #b5c3b1;
+    /*background: #b5c3b1;*/
     box-sizing: border-box;
 }
 
@@ -45,7 +45,7 @@ header nav ul {
 /*Affichage placement des contenus: accueil, lég fruits, cueillettes*/
 
 header nav ul li {
-    background: #edc58a;
+    /*background: #edc58a;*/
     list-style: none;
     display: inline-block;
     padding: auto;
@@ -53,8 +53,10 @@ header nav ul li {
     flex-direction: row-reverse;
     border-radius: 1rem;
     padding: 10px;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);*/
+
 }
+
 
 /*Entourage des contenus: accueil, lég...*/
 
@@ -73,15 +75,30 @@ nav a:hover {
     color: #cc2200;
 }
 
+
+h3
+{
+    color: #32083d;
+    border-radius: 1rem;
+    /*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);*/
+    padding-left: 100px;
+    width: 300px;
+}
+
+#légumes
+{
+    margin-top: 100px;
+}
+
 /*Effet : trait sous le mot quand souris va desssus*/
 .legume img {
     width: 200px;
     height: 150px;
     border-radius: 50%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0,5%;
     display: block;
-    border: 1px solid black;
+    border: 1px solid rgb(247, 245, 245);
     position: relative;
     overflow: hidden;
     box-shadow: 5px 5px 10px black;
@@ -90,9 +107,19 @@ nav a:hover {
 }
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
      size: 20px;
      text-align: center;
+     color: #32083d;
+     /*background: #edc58a;*/
+     border-radius: 1rem;
+     /*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);*/
+     width: 400px;
+}
+
+h1 a:hover
+{
+    color: #cc2200;
 }
 
 .saisonnalite {
@@ -101,7 +128,7 @@ h1{
    width: 200px;
    text-align: center;
    margin-block-start: 10%;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Poppins', Arial, Helvetica, sans-serif;
    margin-inline-end: 0px;
    margin-block-start: 0px;
    position: relative;
@@ -109,8 +136,9 @@ h1{
    padding-left: 0px;
    padding-right: 0px;
    color: rgba(0, 0, 0) ;
-
 }
+
+
 
 .fruit img {
     width: 200px;
@@ -119,7 +147,7 @@ h1{
     justify-content: space-between;
     margin: 0,5%;
     display: block;
-    border: 1px solid black;
+    border: 1px solid rgb(247, 245, 245);
     position: relative;
     overflow: hidden;
     box-shadow: 5px 5px 10px black;
@@ -231,16 +259,6 @@ h1{
 }
 
 
-/*-----Sections------*/
-
-.btn {
-    margin-right: 20px;
-    padding: 0;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-
 
 #container  /*section 3*/
 {
@@ -250,9 +268,12 @@ h1{
 
 #titre
 {
-    color: brown;
+    color: #32083d;
+    /*background: #edc58a;*/
+    border-radius: 1rem;
+    /*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);*/
     padding-left: 30px;
-    border-radius: 3px solid #d4c658;
+    width:400px;
 }
 
 .small_box /*boite avec les 10 div*/
@@ -283,14 +304,16 @@ h1{
     border-radius:5px; 
     background-color: #d4c658;
     margin-left: 40px;
+    margin-top: -55px;
     width:250px;
     color:white;
+    font-size: 0.8em;
     z-index:1;
 }
 
 #bloc_cueillettes figure img /*photo de icones de cueillettes*/
 {
-    width :255px;
+    width :260px;
     height :200px;
     cursor:pointer;
     z-index:2;
@@ -302,9 +325,9 @@ h1{
     background-color:black;
     color: white;
     padding : 10px 10px 10px 10px;
-    margin-left:5px;
+    margin-left:3px;
     margin-top: -55px;
-    width:226px;
+    width:235px;
     opacity: 0.7;
     text-align: center;
     z-index:3;
@@ -315,6 +338,21 @@ h1{
 .block
 {
     width:20%;
+}
+
+
+/*-----Sections------*/
+
+.fleche {
+    margin-top:50px;
+    margin-right: 20px;
+    padding-left: 10px;
+    justify-content: flex-end;
+    flex-direction: row;
+    width:50px;
+    /*color: #32083d;*/
+    cursor:pointer;
+    z-index: 100;
 }
 
 
